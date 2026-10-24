@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f2;
+  --surface: #ffffff;
+  --surface-muted: #f3ede2;
+  --foreground: #201a13;
+  --muted: #7a7166;
+  --border: #e8e0d2;
+  --accent: #b6592a;
+  --accent-soft: #f3e3d6;
+  --accent-foreground: #ffffff;
+  --danger: #b23b3b;
+  --danger-soft: #f7e3e0;
+  --success: #3f7d52;
+  --success-soft: #e2efe4;
+  --warning: #b8812c;
+  --warning-soft: #f7ecd9;
+  --sidebar: #201a13;
+  --sidebar-foreground: #f3ede2;
+  --sidebar-muted: #a89c89;
+  --sidebar-active: #2c241a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-muted: var(--sidebar-muted);
+  --color-sidebar-active: var(--sidebar-active);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
